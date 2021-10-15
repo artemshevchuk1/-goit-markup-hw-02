@@ -5,6 +5,8 @@
   --white-color: #ffffff;
   --dark-background: #2f303a;
   --light-background: #f5f4fa;
+  --hero-button-background: #0560aa;
+  --footer-address-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -63,6 +65,7 @@ ul {
 /* Герой */
 .hero {
   background: var(--dark-background);
+  text-align: center;
 }
 
 .hero-title {
@@ -71,10 +74,9 @@ ul {
   line-height: 1.36;
   text-align: center;
   color: var(--white-color);
+  text-transform: uppercase;
 }
-button {
-  text-align: center;
-}
+
 
 .hero-button {
   color: var(--white-color);
@@ -88,7 +90,7 @@ button {
 
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--white-color);
+  background-color: var(--hero-button-background);
 }
 
 /* Особенности */
@@ -98,10 +100,10 @@ button {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .section-text {
-  font-family: Raleway;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -160,10 +162,15 @@ button {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
   color: var(--white-color);
+}
+.menu-contacts {
+  color: var(--footer-address-color);
 }
 
 /* Портфолио страница */
+
 .filtres-sublist {
   background: var(--white-color);
   border-radius: 4px;
@@ -173,7 +180,6 @@ button {
 .portfolio-button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
-  cursor: pointer;
 }
 
 .portfolio-button {
@@ -181,6 +187,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  background-color: var(--light-background);
 }
 .portfolio-button.carrent {
   color: var(--white-color);
