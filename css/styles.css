@@ -18,7 +18,8 @@ ul {
   list-style: none;
 }
 
-/* Футер */
+
+/* хедер */
 .logo-web {
   font-family: Raleway;
   color: var(--accent-color);
@@ -53,8 +54,8 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--title-text-color);
   text-decoration: none;
+  color: var(--title-text-color);
 }
 
 .menu-contacts:focus,
@@ -165,8 +166,14 @@ ul {
   font-style: normal;
   color: var(--white-color);
 }
-.menu-contacts {
+
+.menu-contacts-footer{
   color: var(--footer-address-color);
+  text-decoration: none;
+}
+.menu-contacts-footer:hover,
+.menu-contacts-footer:focus{
+  color: var(--accent-color);
 }
 
 /* Портфолио страница */
@@ -193,7 +200,16 @@ ul {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
+.project-sublist{
+  text-decoration: none;
+}
 
+.project-list{
+  text-decoration: none;
+}
+.project-sublist-link{
+   text-decoration: none;
+}
 /* Наши услуги */
 .portfolio-title {
   font-weight: bold;
